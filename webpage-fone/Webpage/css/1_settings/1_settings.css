@@ -16,21 +16,23 @@
     grid-template-areas: "header header"
                          "article picture"
                          "footer picture";
+    width: 80%;
+    margin: 25px auto;
 }
 
 #header {
     grid-area: header;
+    font-family: var(--font-primary);
     height: 40px;
     display: flex;
-	margin: 1% 10% 1%;
-	justify-content: center;
 }
 
 #article {
 	grid-area: article;
 	height: 500px;
-	margin: 1% 1% 1% 20%;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -47,4 +49,6 @@
 
 #footer {
     grid-area: footer;
+    height: 30%;
+    font-family: var(--font-primary);
 }

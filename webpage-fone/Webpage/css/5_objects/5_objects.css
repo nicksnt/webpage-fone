@@ -8,7 +8,9 @@
     line-height: 40px;
     margin-right: 10px;
     font-weight: bold;
-    padding: 0;
+    padding: 0 5px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 #navigation > ul > li > a:hover {
@@ -19,18 +21,19 @@
     transition-duration: 0.3s;
 }
 
-#brand{
+#brand > img{
     display: inline;
+    height: 40px;
     margin-right: 20px;
-    height: 20%;
     align-items: center;
 }
 
-.button{
+.button {
     display: flex;
-    width: 10%;
+    width: 12%;
     align-items: center;
     justify-content: center;
+    font-family: var(--font-primary);
     border-radius: 20px;
     border-style: none;
     cursor: pointer;
@@ -39,6 +42,7 @@
 .button > img {
     height: 40%;
     margin-left: 5px;
+    vertical-align: middle;
 }
 
 #cart{
@@ -47,23 +51,43 @@
     margin-left: 30%;
 }
 
+#cart:hover {
+    background-color: var(--color-button-secundary);;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
 #login{
     background-color: var(--color-button-secundary);
     color: var(--text-color-light);
     margin-left: 10px;
 }
 
+#login:hover {
+    background-color: var(--color-button-primary);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
 
 #article > h1{
     color: var(--color-button-primary);
     font: 700 3.5em var(--font-primary);
+    line-height: 1;
+    width: 504px;
+    height: 183px;
+    font-weight: bold;
     text-align: center;
-    margin: 10% 1% 5% 1%
+    margin-top: 150px;
 }
 
 #article > p{
     color: var(--text-color-secundary);
     font: 400 18px var(--font-primary);
+    line-height: 1;
+    letter-spacing: 0.5px;
+    width: 512.4px;
+    height: 90.7px;
+    margin-top: 25px;
     text-align: center;
 }
 
@@ -75,41 +99,52 @@
     font-weight: bold;
     font-family: var(--font-primary);
     letter-spacing: 80px;
+    margin-left: 2%;
     text-align: center;
     color: #dbdbdb;
     position: absolute;
     z-index: -1;
     margin-top: 90px;
 }
-
-.input-section{
+ 
+.send-message {
     background-color: var(--text-color-light);
     color: var(--text-color-dark);
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 55%;
     height: 5%;
     border-radius: 30px;
     border: none;
     padding: 10px 10px;
 }
 
-#input{
+.send-message input {
     color: var(--text-color-secundary);
+    font-family: var(--font-primary);
     display: flex;
-    width: 67%;
+    width: 70%;
     border: none;
     padding: 10px 10px;
 }
 
-#submit{
+.send-message button {
     background-color: var(--color-button-primary);
+    font-family: var(--font-primary);
     color: var(--text-color-light);
-    display: flex;
-    width: 20%;
+    width: 25%;
     height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 30px;
     border-radius: 30px;
     border: none;
     padding: 15px 10px;
     cursor: pointer;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.send-message button:hover {
+    background-color: #f4891f;
 }
