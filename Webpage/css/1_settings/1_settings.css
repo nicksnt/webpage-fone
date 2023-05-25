@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --text-color-light: #ffff;
+    --text-color-dark: #0000;
+    --text-color-primary: #6066F2;
+    --text-color-secundary: #ADADAD;
+    --color-button-primary: #488CF5;
+    --color-button-secundary: #F4891F;
+    --font-primary:'Roboto', sans-serif;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+                         "article picture"
+                         "footer picture";
+    width: 80%;
+    margin: 25px auto;
+}
+
+#header {
+    grid-area: header;
+    font-family: var(--font-primary);
+    height: 40px;
+    display: flex;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+#article {
+	grid-area: article;
+	height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#picture {
+    grid-area: picture;
+    justify-self: end;
+
+}
+
+#picture > img {
+    width: 490px;
+    height: auto;
+}
+
+#footer {
+    grid-area: footer;
+    font-family: var(--font-primary);
+}
